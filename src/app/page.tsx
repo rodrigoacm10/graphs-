@@ -7,9 +7,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   const data = async () => {
-    const csvData = await fetchCSV(
-      "https://docs.google.com/spreadsheets/d/1vsFO_kUeadrTeCSpk4UZlZlyVuk8MAPeOXNN6B_rhtY/export?format=csv&gid=135093401"
-    );
+    const csvData = await fetchCSV("src/public/data/tabela.csv");
     console.log(csvData);
   };
 
